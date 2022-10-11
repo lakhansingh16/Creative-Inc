@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+html {
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+body{
+    margin: 0%;
+}
+.top-section{
+    background-image: url(img/hero-bg.jpg);
+    background-size:cover;
+    align-items: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height:100vh;
+}
+header{
+    padding:2%;
+    display: flex;
+}
+
+.navbar{
+    padding:0 3%;
+    padding-left: 0%;
+    margin-left: auto;
+    list-style-type: none;
+}
+.navbar li{
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.home-hero{
+    text-align: center;
+}
+.title{
+    margin-top: 9%;
+    margin-bottom: 5%;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.big-top-heading{
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.btn{
+    text-decoration: none;
+}
+
+.btn-accent{
+    color: rgb(69, 255, 69);
+    background: transparent;
+    border: 3px solid rgb(69, 255, 69);
+    font-size: 1.5rem;
+    padding:2rem 3rem;
+    font-weight: 700;
+}
+
+.btn-accent:hover{
+    background-color: rgb(69, 255, 69);
+    color: white;
+    transition-duration: 1000ms;
+}
+
+.home-about{
+    background-color: rgb(36, 36, 36);
+    padding: 1.5%;
+    padding-top: 0;
+    max-width: 35vw;
+    position: absolute;
+    left:5%;
+    top: 85%;
+}
+
+.home-about-textbox{
+    padding: 1.5rem;
+    color: white;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.home-about-textbox>h1{
+    text-align: center;
+    position: absolute;
+    margin: 0%;
+    top: 55px;
+    left: 70px;
+    z-index: 1;
+    padding: 0 30px;
+    background-color: rgb(36, 36, 36);
+    color: rgb(69, 255, 69);
+}
+
+.home-about-textbox > p{
+    border: 3px solid rgb(69, 255, 69);
+    padding: 2.5rem;
+    margin-top: 50px;
+}
+.who-we-are{
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: auto;
+    height: 86vh;
+}
+hr{
+    border: 2px solid rgb(69, 255, 69);
+    height: 0;
+    margin:5% auto 0 auto;
+    width: 20%;
+}
+.portfolio > h1{
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 1% auto 2%;
+    text-align:center;
+}
+
+.port-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.port-item{
+    margin: 0;
+    height: 40vh;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+}
+.port-desc{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color:rgba(0,0,0,0.5);
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 1.5rem;
+    transform: translateY(150px);  
+}
+
+.port-item:hover .port-desc{
+    transform: translateY(0);
+    transition: all ease-in-out 250ms;
+}
+
+.port-desc > p{
+    color: white;
+}
+
+
+.port-item >img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.btn-small{
+    font-size: 0.85rem;
+    padding:1rem 1.5rem ;
+}
+
+.cta{
+    background-color: rgb(69, 255, 69);
+    color: white;
+    text-align: center;
+}
+
+.cta > h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin:0 auto;
+    padding: 2%;
+}
+.cta > p{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 1%;
+}
+
+.btn-dark{
+    display: inline-block;
+    width: max-content;
+    background-color: rgb(69, 255, 69);
+    border: 3px solid rgb(36, 36, 36);
+    color: rgb(36, 36, 36);
+    padding:1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 20px auto;
+}
+.btn-dark:hover{
+    color: white;
+    background-color: rgb(36, 36, 36);
+    transform: scale(1.1);
+    transition: all ease-in-out 200ms;
+}
+footer{
+    background-color: rgb(36, 36, 36);
+    color: white;
+    padding: 5% 10% 5% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.col-3 p{
+    margin: 0;
+    max-width: 40vw;
+    line-height: 2;
+    font-size: 1.3rem;
+    vertical-align: top;
+}
+.col-1{
+    padding-top: 0;
+}
+.footer-list{
+    margin-top: 0;
+    list-style-type: none;
+    line-height: 2;
+    font-size: 1.3rem;
+}
+
+/* media queries for mobile*/
+
+@media(max-width:600px){
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    header{
+        text-align: center;
+        display: block;
+    }
+    .top-section{
+        min-height: 90vh;
+        background-size:cover;
+    }
+    .home-hero{
+        width: 95%;
+        margin:0 auto;
+    }
+    .home-hero a{
+        text-decoration: none;
+    }
+    .title{
+        margin-top: 6rem;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+    .big-top-heading{
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+    
+    .who-we-are{
+        display: none;
+    }
+    .home-about{
+        max-width: 100vw;
+        position:static;
+    }
+    
+    .btn-accent{
+        color: rgb(69, 255, 69);
+        background: transparent;
+        border: 3px solid rgb(69, 255, 69);
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-top: 4rem;
+        min-width: max-content;
+        padding: 1rem 2rem;
+        font-weight: 700;
+    }
+    
+    .home-about{
+        background-color: rgb(36, 36, 36);
+        padding: 1.5%;
+        padding-top: 0;
+        max-width: 100vw;
+    }
+    
+    .home-about-textbox{
+        text-align: center;
+        padding: 0.5rem;
+        line-height: 1.1;
+        font-size: 1.2rem;
+        position: relative;
+    }
+    
+    .home-about-textbox>h1{
+        text-align: center;
+        position: absolute;
+        margin: 0%;
+        top: 45px;
+        left: 70px;
+        z-index: 1;
+        padding: 0 30px;
+        background-color: rgb(36, 36, 36);
+        color: rgb(69, 255, 69);
+    }
+    
+    .home-about-textbox > p{
+        border: 3px solid rgb(69, 255, 69);
+        padding: 2.5rem 1rem;
+        margin-top: 50px;
+    }
+    hr{
+        border: 1px solid rgb(69, 255, 69);
+        height: 0;
+        margin: 10% auto 10% auto;
+        width: 30%;
+    }
+    .portfolio > h1{
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 5% auto 7%;
+        text-align:center;
+    }
+    
+    .port-items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .port-item{
+        margin: 0;
+        height: 15vh;
+        flex-grow: 1;
+        max-width: 50vw;
+    }
+    .port-item >img{
+        max-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+    }
+    .port-desc{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        background-color:rgba(0,0,0,0.5);
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        max-height: 40%;
+        transform: translateY(0);
+        font-size: 0.5rem;
+    }
+    
+    .port-item:hover .port-desc{
+        transform: translateY(0);
+        transition: all ease-in-out 250ms;
+    }
+    .cta{
+        background-color: rgb(69, 255, 69);
+        color: white;
+        text-align: center;
+    }
+    
+    .cta > h1{
+        font-size: 2rem;
+        font-weight:700;
+        line-height: 1.1;
+        margin:0 auto;
+        padding: 2rem;
+    }
+    .cta > p{
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.1;
+        padding-bottom: 1%;
+    }
+    
+    .btn-dark{
+        display: inline-block;
+        width: max-content;
+        padding:0.5rem 2rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 1.5rem auto 3rem auto;
+    }
+
+    footer{
+        background-color: rgb(36, 36, 36);
+        color: white;
+        padding: 5% 10% 5% 10%;
+        display: block;
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+    .col-3 p{
+        margin: 0;
+        max-width: 100vh;
+        line-height: 1.5;
+        font-size: 1.2rem;
+        padding-top: 2rem ;
+    }
+    .col-1{
+        display: inline-block;
+        max-width: 100vw;
+        padding-top: 0;
+    }
+    .footer-list{
+        margin-top: 3rem;
+        list-style-type: none;
+        line-height: 1;
+        margin-right: 1rem;
+        font-size: 0.8rem;
+        max-width:min-content;
+        padding-left: 0%;
+    }
+    .btn-small{
+        font-size: 0.5rem;
+        padding:0.1rem 0.3rem ;
+        margin: 0;
+        border-width: 1px;
+    }
+
+}
